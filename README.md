@@ -5,11 +5,15 @@ Frontend link(DEPLOYED ON NETLIFY) - https://airveda-devices-shashank.netlify.ap
 
 
 • API to create a device
-        o Endpoint: POST /api/devices/
+        o Endpoint: POST /api/devices/ 
+      
         o Content-Type: application/json
         o Request Body
                 ▪ uid
                 ▪ name
+                
+     example:- https://airveda.onrender.com/api/devices 
+     passing uid and name in request.body
                 
 • API to delete a device
        o Endpoint: DELETE /api/devices/{device-uid}
