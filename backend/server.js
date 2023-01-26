@@ -32,6 +32,6 @@ app.use(
   );
 app.use("/api",deviceRoutes);
 
-app.listen(4000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`Backend is running on 4000`)
 });

@@ -26,7 +26,7 @@ function DeviceGraph({ uid }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`http://localhost:4000/api/devices-graph?uid=${uid}`);
+        const response = await axios.get(`https://airveda.onrender.com/api/devices-graph?uid=${uid}`);
         settempReadings(response.data.data.temperature);
         sethumidReadings(response.data.data.humidity);
       }

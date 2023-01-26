@@ -10,7 +10,7 @@ function App() {
   const [listUid, setListUid] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`http://localhost:4000/api/devices/alluid`);
+      const response = await axios.get(`https://airveda.onrender.com/api/devices/alluid`);
       setListUid(response.data.allList);
     }
     fetchData();
