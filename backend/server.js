@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
-const DB_URI = "mongodb://localhost:27017/airveda";
+const DB_URI = "mongodb+srv://sauravshashank2001:yoyohoney@ecommerce.3t10vwc.mongodb.net/devices?retryWrites=true";
 
 mongoose.set('strictQuery', true);
 mongoose.connect(DB_URI)
